@@ -240,3 +240,44 @@ var arr=[10,20,30];
 var arr2=[...arr,40,50];
 console.log(arr);
 console.log(arr2);
+
+var [m1,m2,m3,m4,m5]=[90,99,98,97,100]
+console.log(m1,m2,m3,m4,m5);
+
+var {name,mobile,delt,email,isActive} ={
+     name:"Abinaya",
+     mobile:1234567890,
+     dept:["CT"],
+     email:"abi@gmail.com",
+     isActive:true
+}
+console.log(name,mobile,delt,email,isActive);
+
+var arr =[10,20,30,40,50];
+//for..in
+for(let index in arr){
+    console.log(index)
+}
+//for..of
+for(let value of arr){
+    console.log(value)
+}
+var obj={
+    name:"Abinaya",
+    dept:["CT"],
+    mobile:1234567890
+}
+for(let key in obj){
+    console.log(key,obj[lkey])
+}
+
+var arr =[1,2,3,4,5];
+
+var result= arr.map((va1)=>(val*2));
+console.log(result)
+
+var even=arr.filter((va1)=>va1%2===0);
+console.log(even)
+
+var sum=arr.reduce((add,va1)=>(add+va1),0);
+console.log(sum)
